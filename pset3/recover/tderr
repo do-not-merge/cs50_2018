@@ -1,0 +1,63 @@
+PUTS(3)                                                      Linux Programmer's Manual                                                      PUTS(3)
+
+NNAAMMEE
+       fputc, fputs, putc, putchar, puts - output of characters and strings
+
+SSYYNNOOPPSSIISS
+       ##iinncclluuddee <<ssttddiioo..hh>>
+
+       iinntt ffppuuttcc((iinntt _c,, FFIILLEE **_s_t_r_e_a_m));;
+
+       iinntt ffppuuttss((ccoonnsstt cchhaarr **_s,, FFIILLEE **_s_t_r_e_a_m));;
+
+       iinntt ppuuttcc((iinntt _c,, FFIILLEE **_s_t_r_e_a_m));;
+
+       iinntt ppuuttcchhaarr((iinntt _c));;
+
+       iinntt ppuuttss((ccoonnsstt cchhaarr **_s));;
+
+DDEESSCCRRIIPPTTIIOONN
+       ffppuuttcc() writes the character _c, cast to an _u_n_s_i_g_n_e_d _c_h_a_r, to _s_t_r_e_a_m.
+
+       ffppuuttss() writes the string _s to _s_t_r_e_a_m, without its terminating null byte ('\0').
+
+       ppuuttcc() is equivalent to ffppuuttcc() except that it may be implemented as a macro which evaluates _s_t_r_e_a_m more than once.
+
+       ppuuttcchhaarr((_c)) is equivalent to ppuuttcc((_c,, _s_t_d_o_u_t))..
+
+       ppuuttss() writes the string _s and a trailing newline to _s_t_d_o_u_t.
+
+       Calls  to  the functions described here can be mixed with each other and with calls to other output functions from the _s_t_d_i_o library for the
+       same output stream.
+
+       For nonlocking counterparts, see uunnlloocckkeedd__ssttddiioo(3).
+
+RREETTUURRNN VVAALLUUEE
+       ffppuuttcc(), ppuuttcc() and ppuuttcchhaarr() return the character written as an _u_n_s_i_g_n_e_d _c_h_a_r cast to an _i_n_t or EEOOFF on error.
+
+       ppuuttss() and ffppuuttss() return a nonnegative number on success, or EEOOFF on error.
+
+AATTTTRRIIBBUUTTEESS
+       For an explanation of the terms used in this section, see aattttrriibbuutteess(7).
+
+       +--------------------------+---------------+---------+
+       |IInntteerrffaaccee                 | AAttttrriibbuuttee     | VVaalluuee   |
+       +--------------------------+---------------+---------+
+       |ffppuuttcc(), ffppuuttss(), ppuuttcc(), | Thread safety | MT-Safe |
+       |ppuuttcchhaarr(), ppuuttss()         |               |         |
+       +--------------------------+---------------+---------+
+CCOONNFFOORRMMIINNGG TTOO
+       POSIX.1-2001, POSIX.1-2008, C89, C99.
+
+BBUUGGSS
+       It is not advisable to mix calls to output functions from the _s_t_d_i_o library with low-level calls to wwrriittee(2) for the file descriptor associ-
+       ated with the same output stream; the results will be undefined and very probably not what you want.
+
+SSEEEE AALLSSOO
+       wwrriittee(2), ffeerrrroorr(3), ffggeettss(3), ffooppeenn(3), ffppuuttwwcc(3), ffppuuttwwss(3), ffsseeeekk(3), ffwwrriittee(3), ppuuttwwcchhaarr(3), ssccaannff(3), uunnlloocckkeedd__ssttddiioo(3)
+
+CCOOLLOOPPHHOONN
+       This page is part of release 4.15 of the Linux _m_a_n_-_p_a_g_e_s project.  A description of the project, information about reporting bugs,  and  the
+       latest version of this page, can be found at https://www.kernel.org/doc/man-pages/.
+
+GNU                                                                  2015-08-08                                                             PUTS(3)
