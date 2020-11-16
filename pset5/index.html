@@ -1,0 +1,148 @@
+<!-- index.html
+Guilherme Albertini
+CS 50 2019-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Legend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1280, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!--also include popper.js and jquery per documentation as some features break-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--icons from here-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+  body 
+  {   
+      position: relative; 
+  }
+  </style>
+  <script>
+    var siteWidth = 1280;
+    var scale = screen.width /siteWidth;
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+  </script>
+</head>
+     
+    
+    <body data-spy="scroll" data-target=".navbar" data-offset="20">
+      
+      <header>
+        <div class="jumbotron jumbotron-fluid"  style="margin-bottom:0px; text-align:center;">
+        <h1>This is Guilherme Albertini<br></h1>
+        <h2><i>Crash course to my world.</i></h2>
+        </div>
+      </header>
+    
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">The Beginning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section8">What is Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Where to Next</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Associated Acts
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section10">CEC@UCLA</a>
+            <a class="dropdown-item" href="#section5">ELFIN@UCLA</a>
+            <a class="dropdown-item" href="#section6">Lockheed Martin Space</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class= "box1to12">
+      <div class="container-fluid">
+  		  <div class = "row">
+  		    <div class="col-6">
+  		      <div id="section1">
+              <h1>The Beginning</h1>
+              <p>Established in 1995, this legend initially grew up in Brazil. Once his father decided that pursuing middle-class ambitions in metropolitan S&#227;o Paolo was not enough to make
+                 a poignant, indie documentary worthy of an Oscar he decided to move to the U.S. with his wife,—this at a time where most Americans he met thought all Brazilians 
+                 were models who spoke Spanish and played football. He realized only one of those things wasn't true.<br><br> Hooked?
+              <a href="/me.html"><strong>Yessir.</strong></a>
+              </p>
+              
+            </div>
+  		      <div id="section2">
+              <img class="scaled-img" src="bae.JPG" alt="A layover.">
+            </div>
+            <div id="section3">
+              <h1>Where to Next</h1>
+              <p>Ah, fuuuck. <i>Where do you see yourself in 5 years?"</i> It's always the question I'm asked—response tentatively given, borne out of wishful thinking or, at times, pure fantasy. 
+                 Let me stuff my face with dim sum and soju then <a href="/chchchchanges.html"><strong>answer.</strong></a></p><br>Also, it rhymes with "Asia".
+            </div>
+            <div id="section4">
+              <img class="scaled-img" src="cec.JPG" alt="The homies.">
+            </div>
+            <div id="section5">
+              <h1>ELFIN@UCLA</h1>
+              <p>So I was a nerd back in my day. A cool nerd. I worked on this nanosatellite project, graciously sponsored by NASA and the American National Science Foundation. Yeet.</p>
+              <p>Check it out <a href="https://elfin.igpp.ucla.edu/"><strong>here.</strong></a></p>
+            </div>
+            <div id="section6">
+              <img class="scaled-img" src="lmspace.JPEG" alt="Cool work, boring workplace.">
+            </div>
+          </div>
+          <div class="col-6">
+  		      <div id="section7">
+              <img class="scaled-img" src="me.JPG" alt="hey, ladies">
+            </div>
+            <div id="section8">
+              <h1>What is Up</h1>
+              <p>Guilherme currently lives in Silicon Valley: Home of Tech Bro Idealism, Data Mining, and Gentrification.&#8482; While he enjoys the thought of living here and works on pretty cool stuff, he isn't too stoked about the idea of staying here
+                for too long because like...it like totally lacks things L.A. offered. And what other global cities did too. Sigh. Seriously, I could go on about all the pros and cons about California's booming tech hub and the effects it's having on the 
+                community due to its rapid growth...
+              </p>
+            </div>
+            <div id="section9">
+              <img class="scaled-img" src="shanghai.JPG" alt="NYC, definitely.">
+            </div>
+            <div id="section10">
+              <h1>CEC@UCLA</h1>
+              <p>In the true spirit of Hollywood, I got involved in the entertainment industry through the Campus Events Commission in college.<br>
+              <br>Think "live entertainment providers for students": free concerts featuring local (and international) artists; 
+                  celebrity (or niche) speaker panels, and movie studios working with us to show movies to Bruins before they came out. 
+              <p>It was neat leading the Speakers team and #networking with talent managers and their clients. And, true to form, I left all that behind for the engineering industry. I'm quite the wanderer, yes.</p>
+              <p>Check them out <a href="https://www.uclacec.com/#/"><strong>here.</strong></a></p>
+            </div>
+            <div id="section11">
+              <img class="scaled-img" src="elfin1.JPG" alt="Nerd squad out here.">
+            </div>
+            <div id="section12">
+              <h1>Lockheed Martin Space</h1>
+              <p>This guy is currently working on satellite components for Lockheed Martin. The work is cool, but not sure this is exactly where I fit. 
+                 I don't even understand me at times.</p>
+                 
+             <p>I'm on a classified mission as it stands but I hope this <a href="/classified.html"><strong>sneak preview</strong></a> stays in this PSET.</p>
+            </div>
+  		    </div>
+  		    
+  		  </div>
+		  </div>
+    </div>
+
+		 <footer>
+        <div class="fixed-bottom bg-dark text-white py-3" style="text-align:center;">
+          <a href="www.linkedin.com/in/gcalbertini"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/gbertini123"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://twitter.com/thomasballatore?lang=en"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+   
+    
+    
+    </body>
+</html>

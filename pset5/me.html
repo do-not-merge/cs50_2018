@@ -1,0 +1,68 @@
+<!-- me.html
+Guilherme Albertini
+CS 50 2019-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Legend</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1280, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!--also include popper.js and jquery per documentation as some features break-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--icons from here-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+  body 
+  {
+      position: relative; 
+  }
+  </style>
+  
+  <script>
+    var siteWidth = 1280;
+    var scale = screen.width /siteWidth;
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+  </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
+      
+    <header>
+      <div class="fixed-top bg-dark text-white py-3" style="text-align:center;">
+          <a href="/index.html"><i class="fa fa-home"></i></a>
+          <a href="/me.html"><i class="fa fa-male"></i></a>
+          <a href="/chchchchanges.html"><i class="fa fa-plane"></i></a>
+          <a href="https://www.uclacec.com/#/"><i class="fa fa-star"></i></a>
+          <a href="https://elfin.igpp.ucla.edu/"><i class="fa fa-rocket"></i></a>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+      <blockquote>
+        I didn't cry when I was born in Brazil. I was just quiet. And I remained like this for years...maybe it was due to moving to and fro, from the States to Brazil and back again. Maybe it was silence that rendered
+        comfort from the uncertainties of change, the latter the only constant I knew until late in middle school; we would move from one place to the next every 1 to 3 years before that. Brazil. The States. Houston. Brazil. 
+        Ohio. NYC. Miami. California. If it were not for divine providence at the last hour (well, this for the young teen me as I would've grown a lot from that experience in hindsight) my sister and I would be going to an American 
+        school in Beijing or Singapore. But alas, here we are. And now I'm looking to live in Asia for a change of...well, everything. Funny that. My mom recently told me that when I was 6 years old, we had to write something 
+        we'd like to do when we were bigger. I wrote (or so she claims) that I would "travel the world and learn everyone's cultures and languages". She then told me I was adopted. The last part was a joke. My humor.
+      
+      <cite>Guilherme Albertini</cite>
+      </blockquote>
+    </div>
+    
+    
+  
+    
+    <footer>
+        <div class="fixed-bottom bg-dark text-white py-3" style="text-align:center;">
+          <a href="www.linkedin.com/in/gcalbertini"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/gbertini123"><i class="fa fa-facebook-square"></i></a>
+          <a href="https://twitter.com/thomasballatore?lang=en"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+    
+</body>
