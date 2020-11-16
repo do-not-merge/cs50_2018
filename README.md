@@ -1,2 +1,2 @@
-# cs50_2018
-Harvard Course - Intensive Intro to CS
+# CS50
+Harvard Course - Intensive Intro to CS (2018/2019)
